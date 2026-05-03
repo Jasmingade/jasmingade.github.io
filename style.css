@@ -2,11 +2,23 @@
   box-sizing: border-box;
 }
 
+:root {
+  --cream: #F8F3EA;
+  --warm-white: #FFF9EF;
+  --text: #24313A;
+  --muted-text: #5E6B72;
+  --dove-blue: #89A8B2;
+  --dove-blue-dark: #557684;
+  --orange: #E8894A;
+  --yellow: #F4C95D;
+  --border: rgba(36, 49, 58, 0.14);
+}
+
 body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: #0f172a;
-  color: #e5e7eb;
+  background: var(--cream);
+  color: var(--text);
   line-height: 1.6;
 }
 
@@ -19,9 +31,9 @@ a {
   min-height: 100vh;
   padding: 2rem;
   background:
-    radial-gradient(circle at top left, rgba(56, 189, 248, 0.25), transparent 35%),
-    radial-gradient(circle at bottom right, rgba(168, 85, 247, 0.25), transparent 35%),
-    #0f172a;
+    radial-gradient(circle at top left, rgba(232, 137, 74, 0.28), transparent 34%),
+    radial-gradient(circle at bottom right, rgba(137, 168, 178, 0.45), transparent 36%),
+    linear-gradient(135deg, #F8F3EA 0%, #FFF9EF 45%, #F4E6C8 100%);
 }
 
 nav {
@@ -35,6 +47,7 @@ nav {
 
 nav h1 {
   font-size: 1.2rem;
+  color: var(--text);
 }
 
 nav div {
@@ -44,11 +57,12 @@ nav div {
 }
 
 nav a {
-  color: #cbd5e1;
+  color: var(--muted-text);
+  font-weight: 600;
 }
 
 nav a:hover {
-  color: #ffffff;
+  color: var(--orange);
 }
 
 .hero-content {
@@ -57,21 +71,23 @@ nav a:hover {
 }
 
 .eyebrow {
-  color: #38bdf8;
+  color: var(--dove-blue-dark);
   text-transform: uppercase;
   letter-spacing: 0.12em;
   font-size: 0.85rem;
+  font-weight: 800;
 }
 
 .hero-content h2 {
   font-size: clamp(2.5rem, 7vw, 5rem);
   line-height: 1;
   margin: 1rem 0;
+  color: var(--text);
 }
 
 .hero-content p {
   max-width: 650px;
-  color: #cbd5e1;
+  color: var(--muted-text);
   font-size: 1.2rem;
 }
 
@@ -79,10 +95,16 @@ nav a:hover {
   display: inline-block;
   margin-top: 1.5rem;
   padding: 0.9rem 1.2rem;
-  background: #38bdf8;
-  color: #020617;
+  background: var(--orange);
+  color: #ffffff;
   border-radius: 999px;
-  font-weight: 700;
+  font-weight: 800;
+  box-shadow: 0 12px 24px rgba(232, 137, 74, 0.25);
+}
+
+.button:hover {
+  background: #cf7136;
+  transform: translateY(-1px);
 }
 
 .section {
@@ -94,6 +116,7 @@ nav a:hover {
 .section h2 {
   font-size: 2.2rem;
   margin-bottom: 1.5rem;
+  color: var(--text);
 }
 
 .grid {
@@ -103,24 +126,30 @@ nav a:hover {
 }
 
 .card {
-  background: rgba(15, 23, 42, 0.8);
-  border: 1px solid rgba(148, 163, 184, 0.25);
+  background: var(--warm-white);
+  border: 1px solid var(--border);
   border-radius: 1.2rem;
   padding: 1.5rem;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 20px 40px rgba(36, 49, 58, 0.08);
+}
+
+.card:hover {
+  border-color: rgba(232, 137, 74, 0.45);
+  transform: translateY(-3px);
 }
 
 .card h3 {
   margin-top: 0;
-  color: #f8fafc;
+  color: var(--text);
 }
 
 .card p {
-  color: #cbd5e1;
+  color: var(--muted-text);
 }
 
 footer {
   text-align: center;
   padding: 2rem;
-  color: #94a3b8;
+  color: var(--muted-text);
+  background: #F1E7D8;
 }
