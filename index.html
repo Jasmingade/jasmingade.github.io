@@ -15,6 +15,7 @@
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
@@ -23,97 +24,243 @@
       <p class="eyebrow">Bioinformatics & Systems Biology</p>
       <h2>Turning complex omics data into biological insight.</h2>
       <p>
-        I work with cancer omics, survival analysis, transcriptomics,
-        proteomics, isoform-level analysis, and reproducible data workflows.
+        I work at the intersection of cancer biology, transcriptomics, proteomics,
+        isoform-level analysis, and survival modelling — building structure around
+        complex omics questions.
       </p>
+    
+      <div class="hero-tags" aria-label="Key areas">
+        <span>Cancer omics</span>
+        <span>Survival analysis</span>
+        <span>Transcriptomics</span>
+        <span>Proteomics</span>
+        <span>Isoforms</span>
+        <span>Reproducible workflows</span>
+      </div>
+    
       <a class="button" href="#projects">View my work</a>
     </section>
   </header>
 
   <main>
-    <section id="about" class="section">
-      <h2>About</h2>
-      <p>
-        I am an MSc Eng in Bioinformatics and Systems Biology with an interest
-        in cancer biology, multi-omics analysis, survival modelling, and the
-        biological interpretation of high-dimensional data.
-      </p>
+    <section id="about" class="section about-section">
+      <div>
+        <p class="section-label">About</p>
+        <h2>Bioinformatics with biological context.</h2>
+      </div>
+  
+      <div class="about-grid">
+        <p>
+          I am an MSc Eng in Bioinformatics and Systems Biology with an interest
+          in cancer biology, multi-omics analysis, survival modelling, and the
+          biological interpretation of high-dimensional data.
+        </p>
+  
+        <p>
+          I enjoy working in the space where everything initially feels messy:
+          many files, many hypotheses, many possible directions. My strength is
+          turning that complexity into structure while keeping the biological
+          question at the centre.
+        </p>
+      </div>
     </section>
-
+  
     <section id="skills" class="section">
-      <h2>Skills</h2>
+      <p class="section-label">Skills</p>
+      <h2>Technical toolbox</h2>
+  
       <div class="grid">
         <div class="card">
-          <h3>Programming</h3>
-          <p>R, Python, Bash, Git, Linux, SLURM/HPC</p>
+          <h3>Programming & workflows</h3>
+          <p>R, Python, Bash, Git, Linux, SLURM/HPC, reproducible analyses</p>
         </div>
+  
         <div class="card">
-          <h3>Bioinformatics</h3>
-          <p>Transcriptomics, proteomics, isoform analysis, cancer omics</p>
+          <h3>Bioinformatics & omics</h3>
+          <p>Transcriptomics, proteomics, isoform analysis, cancer omics, gene-level analysis</p>
         </div>
+  
         <div class="card">
-          <h3>Statistics</h3>
-          <p>Survival analysis, CoxPH models, hazard ratios, visualization</p>
+          <h3>Statistics & modelling</h3>
+          <p>Survival analysis, Cox proportional hazards models, hazard ratios, multiple testing</p>
+        </div>
+  
+        <div class="card">
+          <h3>Data storytelling</h3>
+          <p>Biological interpretation, visualisation, scientific writing, thesis-level project structure</p>
         </div>
       </div>
     </section>
-
+  
     <section id="projects" class="section">
-      <h2>Projects</h2>
+      <p class="section-label">Projects</p>
+      <h2>Selected work</h2>
+  
+      <div class="project-list">
+        <article class="project-card">
+          <div>
+            <p class="project-kicker">Cancer omics · Survival analysis</p>
+            <h3>Cancer Survival Analysis Across Omics</h3>
+            <p>
+              Survival analysis across transcriptomic and proteomic features using
+              Cox proportional hazards models to investigate associations between
+              molecular features and clinical outcome.
+            </p>
+          </div>
+          <div class="tag-list">
+            <span>R</span>
+            <span>CoxPH</span>
+            <span>Omics</span>
+            <span>Survival</span>
+          </div>
+        </article>
+  
+        <article class="project-card">
+          <div>
+            <p class="project-kicker">Isoforms · Gene-level comparison</p>
+            <h3>Isoform vs Gene-Level Prognostic Signals</h3>
+            <p>
+              Investigation of whether isoform-derived survival signals recapitulate
+              gene-level expression effects or reveal additional, potentially
+              orthogonal biological information.
+            </p>
+          </div>
+          <div class="tag-list">
+            <span>Isoforms</span>
+            <span>Transcriptomics</span>
+            <span>Gene-level</span>
+          </div>
+        </article>
+  
+        <article class="project-card">
+          <div>
+            <p class="project-kicker">Multi-omics · Biological interpretation</p>
+            <h3>Cross-Omics Shared Features</h3>
+            <p>
+              Identification of genes with survival-relevant evidence across RNA and
+              protein layers, highlighting features with stronger biological coherence
+              across molecular modalities.
+            </p>
+          </div>
+          <div class="tag-list">
+            <span>Proteomics</span>
+            <span>RNA</span>
+            <span>Integration</span>
+          </div>
+        </article>
+  
+        <article class="project-card">
+          <div>
+            <p class="project-kicker">HPC · Reproducibility</p>
+            <h3>Configurable HPC Workflows</h3>
+            <p>
+              Development of SLURM-based analysis workflows where parameters such as
+              cancer type can be configured directly from job scripts for scalable
+              and reproducible analyses.
+            </p>
+          </div>
+          <div class="tag-list">
+            <span>SLURM</span>
+            <span>Bash</span>
+            <span>HPC</span>
+            <span>Automation</span>
+          </div>
+        </article>
+      </div>
+    </section>
+  
+    <section id="education" class="section">
+      <p class="section-label">Education</p>
+      <h2>Academic background</h2>
+  
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div>
+            <h3>MSc Eng in Bioinformatics and Systems Biology</h3>
+            <p>Technical University of Denmark</p>
+            <p class="muted">
+              Focus on computational biology, omics data analysis, systems-level thinking,
+              and biological interpretation of complex data.
+            </p>
+          </div>
+        </div>
+  
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div>
+            <h3>BSc in Life Science Engineering</h3>
+            <p>Technical University of Denmark</p>
+            <p class="muted">
+              Foundation in life science, biotechnology, engineering, mathematics,
+              and data-driven biological analysis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="section values-section">
+      <p class="section-label">How I work</p>
+      <h2>From chaos to structure.</h2>
+  
       <div class="grid">
-        <div class="card">
-          <h3>Cancer Survival Analysis</h3>
+        <div class="card accent-card">
+          <h3>Curious first</h3>
           <p>
-            Survival analysis across transcriptomic and proteomic features
-            using Cox proportional hazards models.
+            I like asking why a result appears, what biological mechanism could
+            explain it, and whether the data supports that story.
           </p>
         </div>
-        <div class="card">
-          <h3>Isoform vs Gene-Level Signals</h3>
+  
+        <div class="card accent-card">
+          <h3>Structured when it matters</h3>
           <p>
-            Investigating whether isoform-derived signals add biological
-            information beyond gene-level expression.
+            I turn messy analyses into reproducible workflows, interpretable
+            outputs, and clear scientific narratives.
           </p>
         </div>
-        <div class="card">
-          <h3>Cross-Omics Shared Features</h3>
+  
+        <div class="card accent-card">
+          <h3>Biology-aware computation</h3>
           <p>
-            Identifying features shared across RNA and protein layers as
-            high-confidence biological candidates.
+            I care about models and pipelines, but I care just as much about what
+            the results mean biologically.
           </p>
         </div>
       </div>
     </section>
-
-    <section id="contact" class="section">
-  <h2>Contact</h2>
-  <p>
-    You can reach me by email or find my work on GitHub and LinkedIn.
-  </p>
-
-  <div class="contact-links" aria-label="Contact links">
-    <a class="contact-icon" href="https://www.linkedin.com/in/jasmingade" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.61 0 4.27 2.37 4.27 5.46v6.28ZM5.32 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12Zm1.78 13.02H3.54V9H7.1v11.45ZM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0Z"/>
-      </svg>
-      <span>LinkedIn</span>
-    </a>
-
-    <a class="contact-icon" href="https://github.com/Jasmingade" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M12 .3a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.93.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .3Z"/>
-      </svg>
-      <span>GitHub</span>
-    </a>
-
-    <a class="contact-icon" href="mailto:jasmin_gade@hotmail.com" aria-label="Send email to Jasmin">
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm-.4 4.25-7.07 5.3a.88.88 0 0 1-1.06 0L4.4 8.25a.9.9 0 1 1 1.08-1.44L12 11.7l6.52-4.89a.9.9 0 1 1 1.08 1.44Z"/>
-      </svg>
-      <span>Email</span>
-    </a>
-  </div>
-</section>
+  
+    <section id="contact" class="section contact-section">
+      <p class="section-label">Contact</p>
+      <h2>Let’s connect</h2>
+      <p>
+        You can reach me by email or find my work on GitHub and LinkedIn.
+      </p>
+  
+      <div class="contact-links" aria-label="Contact links">
+        <a class="contact-icon" href="mailto:jasmin_gade@hotmail.com" aria-label="Send email to Jasmin">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm-.4 4.25-7.07 5.3a.88.88 0 0 1-1.06 0L4.4 8.25a.9.9 0 1 1 1.08-1.44L12 11.7l6.52-4.89a.9.9 0 1 1 1.08 1.44Z"/>
+          </svg>
+          <span>Email</span>
+        </a>
+  
+        <a class="contact-icon" href="https://www.linkedin.com/in/jasmingade" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.61 0 4.27 2.37 4.27 5.46v6.28ZM5.32 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12Zm1.78 13.02H3.54V9H7.1v11.45ZM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0Z"/>
+          </svg>
+          <span>LinkedIn</span>
+        </a>
+  
+        <a class="contact-icon" href="https://github.com/Jasmingade" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 .3a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.93.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .3Z"/>
+          </svg>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </section>
   </main>
 
   <footer>
