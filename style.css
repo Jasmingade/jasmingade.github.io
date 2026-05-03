@@ -153,3 +153,36 @@ footer {
   color: var(--muted-text);
   background: #F1E7D8;
 }
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.contact-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.1rem;
+  background: var(--warm-white, #FFF9EF);
+  color: var(--text, #24313A);
+  border: 1px solid var(--border, rgba(36, 49, 58, 0.14));
+  border-radius: 999px;
+  font-weight: 700;
+  box-shadow: 0 12px 24px rgba(36, 49, 58, 0.08);
+  transition: transform 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.contact-icon svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: currentColor;
+}
+
+.contact-icon:hover {
+  color: var(--orange, #E8894A);
+  border-color: rgba(232, 137, 74, 0.45);
+  transform: translateY(-2px);
+}
