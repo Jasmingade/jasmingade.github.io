@@ -1,6 +1,6 @@
 const academicProjects = {
   "master-thesis": {
-    title: "Master thesis",
+    title: "Multi-omics survival analysis",
     kicker: "MSc thesis · Multi-omics · Survival analysis",
     pdf: "pdfs/master-thesis.pdf",
     description:
@@ -20,7 +20,7 @@ const academicProjects = {
   },
 
   "bachelor-project": {
-    title: "Bachelor project",
+    title: "RNA-seq analysis of cancer hallmarks",
     kicker: "BSc project · RNA-seq · Cancer hallmarks",
     pdf: "pdfs/bachelor-project.pdf",
     description:
@@ -39,7 +39,7 @@ const academicProjects = {
   },
 
   "deep-learning-project": {
-    title: "Deep learning project",
+    title: "Explainable CNNs for AI-generated image detection",
     kicker: "Deep learning · CNNs · Explainable AI",
     pdf: "pdfs/deep-learning-project.pdf",
     description:
@@ -58,7 +58,7 @@ const academicProjects = {
   },
 
   "proteomics-database": {
-    title: "Proteomics database project",
+    title: "Isoform-resolved cancer proteomics resource",
     kicker: "Special course · Proteomics · Isoform-resolved data",
     pdf: null,
     description:
