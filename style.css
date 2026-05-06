@@ -231,6 +231,38 @@ footer {
   font-size: 1.08rem;
 }
 
+.about-profile {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about-image {
+  border-radius: 1.6rem;
+  overflow: hidden;
+  background: var(--warm-white);
+  border: 1px solid var(--border);
+  box-shadow: 0 20px 40px rgba(36, 49, 58, 0.1);
+}
+
+.about-image img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  display: block;
+  object-fit: cover;
+}
+
+@media (max-width: 800px) {
+  .about-profile {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image {
+    max-width: 260px;
+  }
+}
+
 .project-list {
   display: grid;
   gap: 1.2rem;
