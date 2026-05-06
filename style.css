@@ -236,6 +236,7 @@ footer {
   grid-template-columns: 240px 1fr;
   gap: 2rem;
   align-items: center;
+  margin-top: 1.5rem;
 }
 
 .about-image {
@@ -260,6 +261,10 @@ footer {
 
   .about-image {
     max-width: 260px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
   }
 }
 
