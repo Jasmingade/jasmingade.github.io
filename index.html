@@ -186,16 +186,19 @@
       <p class="section-label">Academic work</p>
       <h2>Selected academic projects</h2>
       <p class="section-intro">
-        Browse through selected academic work.
+        Selected academic and research-based projects spanning multi-omics survival analysis,
+        RNA-seq interpretation, deep learning, and proteomics data resource development.
       </p>
     
       <div class="pdf-tabs" aria-label="Choose academic project">
         <button class="pdf-tab active" type="button" data-pdf="pdfs/master-thesis.pdf" data-title="Master thesis">
           Master thesis
         </button>
+    
         <button class="pdf-tab" type="button" data-pdf="pdfs/bachelor-project.pdf" data-title="Bachelor project">
           Bachelor project
         </button>
+    
         <button class="pdf-tab" type="button" data-pdf="pdfs/deep-learning-project.pdf" data-title="Deep learning project">
           Deep learning project
         </button>
@@ -203,18 +206,32 @@
     
       <div class="pdf-layout">
         <div class="pdf-description">
-          <p class="project-kicker" id="pdfKicker">MSc thesis · Cancer omics · Survival analysis</p>
+          <p class="project-kicker" id="pdfKicker">MSc thesis · Multi-omics · Survival analysis</p>
+    
           <h3 id="pdfTitle">Master thesis</h3>
+    
           <p id="pdfDescription">
-            My master thesis investigates survival-associated molecular features across cancer omics data,
-            with a focus on transcriptomics, proteomics, isoform-level signals, and cross-omics biological interpretation.
+            My master thesis investigates how isoform-level expression, mutation-level features,
+            transcriptomics, proteomics, and clinical metadata contribute to cancer survival.
+            The project involved aligning molecular data with clinical metadata, building
+            reproducible computational workflows, and applying Cox proportional hazards modelling
+            to explore patient-level outcomes across molecular data layers. Beyond identifying
+            survival-associated features, the project contributes a structured framework for
+            understanding whether signals are shared across omics layers, specific to individual
+            representations, or shaped by isoform- and mutation-level biology.
           </p>
     
           <div class="tag-list assignment-tags" id="pdfTags">
+            <span>Multi-omics</span>
             <span>Survival analysis</span>
-            <span>Cancer omics</span>
-            <span>Isoforms</span>
+            <span>Clinical metadata</span>
+            <span>Transcriptomics</span>
             <span>Proteomics</span>
+            <span>Isoform analysis</span>
+            <span>Mutation data</span>
+            <span>CoxPH</span>
+            <span>Reproducible workflows</span>
+            <span>Biological interpretation</span>
           </div>
     
           <a class="button secondary-button" id="pdfOpenLink" href="pdfs/master-thesis.pdf" target="_blank" rel="noopener noreferrer">
@@ -228,6 +245,41 @@
             src="pdfs/master-thesis.pdf"
             title="Master thesis PDF viewer">
           </iframe>
+        </div>
+      </div>
+    
+      <div class="additional-projects">
+        <p class="section-label">Additional project</p>
+        <h3>Isoform-resolved cancer proteomics database</h3>
+    
+        <div class="additional-project-card">
+          <div>
+            <p class="project-kicker">Special course · Proteomics · Data resource development</p>
+    
+            <p>
+              This project focused on building an isoform-resolved resource for cancer
+              proteomics data. The work involved structuring proteomics data for downstream
+              analysis, connecting peptide- and protein-level information to isoform-aware
+              biological interpretation, and developing a foundation for querying and comparing
+              proteomics signals across cancer contexts.
+            </p>
+    
+            <p>
+              The project strengthened my experience with data organisation, proteomics
+              workflows, database-oriented thinking, reproducible data structures, and the
+              challenges of representing complex molecular data in a biologically meaningful way.
+            </p>
+          </div>
+    
+          <div class="tag-list additional-project-tags">
+            <span>Proteomics</span>
+            <span>Isoform-resolved data</span>
+            <span>Data resource</span>
+            <span>Peptide mapping</span>
+            <span>Database thinking</span>
+            <span>Reproducible workflows</span>
+            <span>Molecular interpretation</span>
+          </div>
         </div>
       </div>
     </section>
