@@ -222,6 +222,36 @@ footer {
   font-weight: 700;
 }
 
+/* Hero availability + action buttons */
+.availability-note {
+  max-width: 720px;
+  margin-top: 1.4rem;
+  color: var(--dove-blue-dark);
+  font-size: 1rem;
+  font-weight: 750;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.hero-actions .button {
+  margin-top: 0;
+}
+
+.assignment-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 0.28rem;
+  max-width: none;
+  margin-top: 1rem;
+}
+
 .assignment-tags {
   display: flex;
   flex-wrap: wrap;
