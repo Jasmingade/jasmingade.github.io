@@ -14,7 +14,7 @@
       <div>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
+        <a href="#academic-work">Academic work</a>
         <a href="#education">Education</a>
         <a href="#contact">Contact</a>
       </div>
@@ -92,80 +92,53 @@
       </div>
     </section>
   
-    <section id="projects" class="section">
-      <p class="section-label">Projects</p>
-      <h2>Selected work</h2>
-  
-      <div class="project-list">
-        <article class="project-card">
-          <div>
-            <p class="project-kicker">Cancer omics · Survival analysis</p>
-            <h3>Cancer Survival Analysis Across Omics</h3>
-            <p>
-              Survival analysis across transcriptomic and proteomic features using
-              Cox proportional hazards models to investigate associations between
-              molecular features and clinical outcome.
-            </p>
-          </div>
-          <div class="tag-list">
-            <span>R</span>
-            <span>CoxPH</span>
-            <span>Omics</span>
-            <span>Survival</span>
-          </div>
-        </article>
-  
-        <article class="project-card">
-          <div>
-            <p class="project-kicker">Isoforms · Gene-level comparison</p>
-            <h3>Isoform vs Gene-Level Prognostic Signals</h3>
-            <p>
-              Investigation of whether isoform-derived survival signals recapitulate
-              gene-level expression effects or reveal additional, potentially
-              orthogonal biological information.
-            </p>
-          </div>
-          <div class="tag-list">
+    <section id="academic-work" class="section">
+      <p class="section-label">Academic work</p>
+      <h2>Selected academic projects</h2>
+      <p class="section-intro">
+        Browse through selected academic work from my MSc, BSc, and deep learning coursework.
+      </p>
+    
+      <div class="pdf-tabs" aria-label="Choose academic project">
+        <button class="pdf-tab active" type="button" data-pdf="pdfs/master-thesis.pdf" data-title="Master thesis">
+          Master thesis
+        </button>
+        <button class="pdf-tab" type="button" data-pdf="pdfs/bachelor-project.pdf" data-title="Bachelor project">
+          Bachelor project
+        </button>
+        <button class="pdf-tab" type="button" data-pdf="pdfs/deep-learning-project.pdf" data-title="Deep learning project">
+          Deep learning project
+        </button>
+      </div>
+    
+      <div class="pdf-layout">
+        <div class="pdf-description">
+          <p class="project-kicker" id="pdfKicker">MSc thesis · Cancer omics · Survival analysis</p>
+          <h3 id="pdfTitle">Master thesis</h3>
+          <p id="pdfDescription">
+            My master thesis investigates survival-associated molecular features across cancer omics data,
+            with a focus on transcriptomics, proteomics, isoform-level signals, and cross-omics biological interpretation.
+          </p>
+    
+          <div class="tag-list assignment-tags" id="pdfTags">
+            <span>Survival analysis</span>
+            <span>Cancer omics</span>
             <span>Isoforms</span>
-            <span>Transcriptomics</span>
-            <span>Gene-level</span>
-          </div>
-        </article>
-  
-        <article class="project-card">
-          <div>
-            <p class="project-kicker">Multi-omics · Biological interpretation</p>
-            <h3>Cross-Omics Shared Features</h3>
-            <p>
-              Identification of genes with survival-relevant evidence across RNA and
-              protein layers, highlighting features with stronger biological coherence
-              across molecular modalities.
-            </p>
-          </div>
-          <div class="tag-list">
             <span>Proteomics</span>
-            <span>RNA</span>
-            <span>Integration</span>
           </div>
-        </article>
-  
-        <article class="project-card">
-          <div>
-            <p class="project-kicker">HPC · Reproducibility</p>
-            <h3>Configurable HPC Workflows</h3>
-            <p>
-              Development of SLURM-based analysis workflows where parameters such as
-              cancer type can be configured directly from job scripts for scalable
-              and reproducible analyses.
-            </p>
-          </div>
-          <div class="tag-list">
-            <span>SLURM</span>
-            <span>Bash</span>
-            <span>HPC</span>
-            <span>Automation</span>
-          </div>
-        </article>
+    
+          <a class="button secondary-button" id="pdfOpenLink" href="pdfs/master-thesis.pdf" target="_blank" rel="noopener noreferrer">
+            Open PDF in new tab
+          </a>
+        </div>
+    
+        <div class="pdf-viewer">
+          <iframe
+            id="pdfFrame"
+            src="pdfs/master-thesis.pdf"
+            title="Master thesis PDF viewer">
+          </iframe>
+        </div>
       </div>
     </section>
   
