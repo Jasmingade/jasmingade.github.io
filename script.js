@@ -3,16 +3,17 @@ const pdfProjects = {
     title: "Master thesis",
     kicker: "MSc thesis · Multi-omics · Survival analysis",
     description:
-      "My master thesis investigates how molecular features across transcriptomics, proteomics, isoform-level signals, mutation-level data, and clinical metadata relate to cancer survival. The project combines computational workflows, statistical modelling, and biological interpretation to explore how different molecular data layers contribute to patient-level outcomes. A central focus is not only identifying survival-associated features, but also understanding whether signals are shared across omics layers or represent distinct biological information.",
+      "My master thesis investigates how isoform-level expression, mutation-level features, transcriptomics, proteomics, and clinical metadata contribute to cancer survival. The project combines harmonised biological and clinical data, reproducible computational workflows, and Cox proportional hazards modelling to explore patient-level outcomes across molecular data layers. Beyond identifying survival-associated features, the project contributes a structured framework for understanding whether signals are shared across omics layers, specific to individual representations, or shaped by isoform- and mutation-level biology.",
     tags: [
       "Multi-omics",
       "Survival analysis",
       "Clinical metadata",
       "Transcriptomics",
       "Proteomics",
-      "Isoforms",
-      "Mutation-level data",
+      "Isoform analysis",
+      "Mutation data",
       "CoxPH",
+      "Reproducible workflows",
       "Biological interpretation"
     ]
   },
@@ -21,30 +22,35 @@ const pdfProjects = {
     title: "Bachelor project",
     kicker: "BSc project · RNA-seq · Cancer hallmarks",
     description:
-      "My bachelor project focused on enabling analysis of cancer hallmarks in RNA-sequencing data. The project combined a life science engineering foundation with computational analysis, biological interpretation, and structured scientific communication. It strengthened my ability to work with high-dimensional molecular data, connect computational results to biological concepts, and communicate findings in a clear and reproducible way.",
+      "My bachelor project focused on enabling bioinformatic analysis of cancer hallmarks in RNA-sequencing data. The project involved curating and validating a cancer hallmark-associated gene set collection, comparing it with established biological knowledge, and applying it to real-world breast cancer data from TCGA. It contributes a structured way to connect transcriptomic data with interpretable biological phenotypes, strengthening my foundation in RNA-seq analysis, gene set methods, biological validation, and scientific communication.",
     tags: [
       "RNA-seq",
+      "Gene sets",
       "Cancer hallmarks",
-      "Molecular biology",
-      "Data analysis",
-      "Biological interpretation",
+      "GSVA",
+      "ssGSEA",
+      "TCGA",
+      "Biological validation",
+      "Data visualisation",
       "Scientific writing"
     ]
   },
 
   "pdfs/deep-learning-project.pdf": {
     title: "Deep learning project",
-    kicker: "Deep learning · Data modelling · Model evaluation",
+    kicker: "Deep learning · CNNs · Explainable AI",
     description:
-      "This project focused on applying deep learning methods to a structured data problem, with emphasis on model development, training, validation, performance evaluation, and interpretation of results. The project strengthened my understanding of data-driven modelling workflows, including how to evaluate model behaviour critically and connect predictions back to the underlying data and research question.",
+      "This project focused on detecting AI-generated images using fine-tuned convolutional neural networks. Working with the CIFAKE dataset, the project compared model performance across loss functions and evaluated accuracy, precision, recall, and F1-score. GradCAM was used to investigate which image regions influenced model decisions, adding an interpretability layer to the classification task. The project contributes experience in deep learning workflows, model evaluation, reproducibility, and critical interpretation of model behaviour.",
     tags: [
       "Deep learning",
+      "CNN",
+      "Explainable AI",
+      "GradCAM",
+      "Model evaluation",
+      "Classification",
       "Python",
-      "Model training",
-      "Validation",
-      "Performance evaluation",
-      "Data modelling",
-      "Feature interpretation"
+      "Reproducibility",
+      "Performance metrics"
     ]
   }
 };
