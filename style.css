@@ -223,48 +223,45 @@ footer {
 }
 
 .assignment-tags {
-  gap: 0.35rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 0.28rem;
+  max-width: none;
   margin-top: 1rem;
 }
 
-.assignment-tags span,
-.additional-project-tags span {
-  padding: 0.24rem 0.48rem;
-  font-size: 0.68rem;
+.assignment-tags span {
+  padding: 0.16rem 0.38rem;
+  border-radius: 999px;
+  background: rgba(137, 168, 178, 0.13);
+  color: var(--dove-blue-dark);
+  font-size: 0.58rem;
   font-weight: 750;
-  line-height: 1.2;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
 }
 
-.additional-projects {
-  margin-top: 3rem;
+.pdf-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.additional-projects h3 {
-  margin: 0.3rem 0 1rem;
-  font-size: 1.7rem;
-  color: var(--text);
+.pdf-description p {
+  line-height: 1.75;
 }
 
-.additional-project-card {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 1.5rem;
-  align-items: start;
-  background: var(--warm-white);
-  border: 1px solid var(--border);
-  border-radius: 1.4rem;
-  padding: 1.5rem;
-  box-shadow: 0 20px 40px rgba(36, 49, 58, 0.08);
+.pdf-description h3 {
+  margin-bottom: 0.9rem;
 }
 
-.additional-project-card p {
-  color: var(--muted-text);
+#pdfDescription {
+  margin-bottom: 0;
 }
 
-.additional-project-tags {
-  justify-content: flex-end;
-  max-width: 280px;
-  gap: 0.35rem;
+#pdfOpenLink {
+  margin-top: 1.4rem;
 }
 
 @media (max-width: 800px) {
