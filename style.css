@@ -510,8 +510,6 @@ footer {
 
 /* Courses */
 
-/* Courses */
-
 .courses-section {
   margin-top: 5.5rem;
   padding: 1.6rem;
@@ -529,6 +527,7 @@ footer {
   justify-content: space-between;
   gap: 1rem;
   align-items: flex-end;
+  margin-top: 2.5rem;
   margin-bottom: 1.6rem;
 }
 
