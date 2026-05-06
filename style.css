@@ -227,10 +227,55 @@ footer {
   margin-top: 1rem;
 }
 
-.assignment-tags span {
-  padding: 0.28rem 0.5rem;
-  font-size: 0.72rem;
+.assignment-tags span,
+.additional-project-tags span {
+  padding: 0.24rem 0.48rem;
+  font-size: 0.68rem;
   font-weight: 750;
+  line-height: 1.2;
+}
+
+.additional-projects {
+  margin-top: 3rem;
+}
+
+.additional-projects h3 {
+  margin: 0.3rem 0 1rem;
+  font-size: 1.7rem;
+  color: var(--text);
+}
+
+.additional-project-card {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1.5rem;
+  align-items: start;
+  background: var(--warm-white);
+  border: 1px solid var(--border);
+  border-radius: 1.4rem;
+  padding: 1.5rem;
+  box-shadow: 0 20px 40px rgba(36, 49, 58, 0.08);
+}
+
+.additional-project-card p {
+  color: var(--muted-text);
+}
+
+.additional-project-tags {
+  justify-content: flex-end;
+  max-width: 280px;
+  gap: 0.35rem;
+}
+
+@media (max-width: 800px) {
+  .additional-project-card {
+    grid-template-columns: 1fr;
+  }
+
+  .additional-project-tags {
+    justify-content: flex-start;
+    max-width: none;
+  }
 }
 
 .section-label {
