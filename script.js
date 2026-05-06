@@ -1,24 +1,51 @@
 const pdfProjects = {
   "pdfs/master-thesis.pdf": {
     title: "Master thesis",
-    kicker: "MSc thesis · Cancer omics · Survival analysis",
+    kicker: "MSc thesis · Multi-omics · Survival analysis",
     description:
-      "My master thesis investigates survival-associated molecular features across cancer omics data, with a focus on transcriptomics, proteomics, isoform-level signals, and cross-omics biological interpretation.",
-    tags: ["Survival analysis", "Cancer omics", "Isoforms", "Proteomics"]
+      "My master thesis investigates how molecular features across transcriptomics, proteomics, isoform-level signals, mutation-level data, and clinical metadata relate to cancer survival. The project combines computational workflows, statistical modelling, and biological interpretation to explore how different molecular data layers contribute to patient-level outcomes. A central focus is not only identifying survival-associated features, but also understanding whether signals are shared across omics layers or represent distinct biological information.",
+    tags: [
+      "Multi-omics",
+      "Survival analysis",
+      "Clinical metadata",
+      "Transcriptomics",
+      "Proteomics",
+      "Isoforms",
+      "Mutation-level data",
+      "CoxPH",
+      "Biological interpretation"
+    ]
   },
+
   "pdfs/bachelor-project.pdf": {
     title: "Bachelor project",
-    kicker: "BSc project · Life science engineering",
+    kicker: "BSc project · RNA-seq · Cancer hallmarks",
     description:
-      "My bachelor project represents my foundation in life science engineering, combining biological problem-solving with quantitative and computational thinking.",
-    tags: ["Life science", "Engineering", "Data analysis", "Scientific writing"]
+      "My bachelor project focused on enabling analysis of cancer hallmarks in RNA-sequencing data. The project combined a life science engineering foundation with computational analysis, biological interpretation, and structured scientific communication. It strengthened my ability to work with high-dimensional molecular data, connect computational results to biological concepts, and communicate findings in a clear and reproducible way.",
+    tags: [
+      "RNA-seq",
+      "Cancer hallmarks",
+      "Molecular biology",
+      "Data analysis",
+      "Biological interpretation",
+      "Scientific writing"
+    ]
   },
+
   "pdfs/deep-learning-project.pdf": {
     title: "Deep learning project",
-    kicker: "Deep learning · Machine learning · Bioinformatics",
+    kicker: "Deep learning · Data modelling · Model evaluation",
     description:
-      "A machine learning project focused on applying deep learning concepts to structured data, with emphasis on model development, evaluation, and interpretation.",
-    tags: ["Python", "Deep learning", "Model evaluation", "Machine learning"]
+      "This project focused on applying deep learning methods to a structured data problem, with emphasis on model development, training, validation, performance evaluation, and interpretation of results. The project strengthened my understanding of data-driven modelling workflows, including how to evaluate model behaviour critically and connect predictions back to the underlying data and research question.",
+    tags: [
+      "Deep learning",
+      "Python",
+      "Model training",
+      "Validation",
+      "Performance evaluation",
+      "Data modelling",
+      "Feature interpretation"
+    ]
   }
 };
 
