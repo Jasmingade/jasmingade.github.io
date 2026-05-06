@@ -191,22 +191,28 @@
       </p>
     
       <div class="pdf-tabs" aria-label="Choose academic project">
-        <button class="pdf-tab active" type="button" data-pdf="pdfs/master-thesis.pdf" data-title="Master thesis">
+        <button class="pdf-tab active" type="button" data-project="master-thesis">
           Master thesis
         </button>
     
-        <button class="pdf-tab" type="button" data-pdf="pdfs/bachelor-project.pdf" data-title="Bachelor project">
+        <button class="pdf-tab" type="button" data-project="bachelor-project">
           Bachelor project
         </button>
     
-        <button class="pdf-tab" type="button" data-pdf="pdfs/deep-learning-project.pdf" data-title="Deep learning project">
+        <button class="pdf-tab" type="button" data-project="deep-learning-project">
           Deep learning project
+        </button>
+    
+        <button class="pdf-tab" type="button" data-project="proteomics-database">
+          Proteomics database
         </button>
       </div>
     
       <div class="pdf-layout">
         <div class="pdf-description">
-          <p class="project-kicker" id="pdfKicker">MSc thesis · Multi-omics · Survival analysis</p>
+          <p class="project-kicker" id="pdfKicker">
+            MSc thesis · Multi-omics · Survival analysis
+          </p>
     
           <h3 id="pdfTitle">Master thesis</h3>
     
@@ -234,52 +240,22 @@
             <span>Biological interpretation</span>
           </div>
     
-          <a class="button secondary-button" id="pdfOpenLink" href="pdfs/master-thesis.pdf" target="_blank" rel="noopener noreferrer">
+          <a
+            class="button secondary-button"
+            id="pdfOpenLink"
+            href="pdfs/master-thesis.pdf"
+            target="_blank"
+            rel="noopener noreferrer">
             Open PDF in new tab
           </a>
         </div>
     
-        <div class="pdf-viewer">
+        <div class="pdf-viewer" id="pdfViewerWrapper">
           <iframe
             id="pdfFrame"
             src="pdfs/master-thesis.pdf"
             title="Master thesis PDF viewer">
           </iframe>
-        </div>
-      </div>
-    
-      <div class="additional-projects">
-        <p class="section-label">Additional project</p>
-        <h3>Isoform-resolved cancer proteomics database</h3>
-    
-        <div class="additional-project-card">
-          <div>
-            <p class="project-kicker">Special course · Proteomics · Data resource development</p>
-    
-            <p>
-              This project focused on building an isoform-resolved resource for cancer
-              proteomics data. The work involved structuring proteomics data for downstream
-              analysis, connecting peptide- and protein-level information to isoform-aware
-              biological interpretation, and developing a foundation for querying and comparing
-              proteomics signals across cancer contexts.
-            </p>
-    
-            <p>
-              The project strengthened my experience with data organisation, proteomics
-              workflows, database-oriented thinking, reproducible data structures, and the
-              challenges of representing complex molecular data in a biologically meaningful way.
-            </p>
-          </div>
-    
-          <div class="tag-list additional-project-tags">
-            <span>Proteomics</span>
-            <span>Isoform-resolved data</span>
-            <span>Data resource</span>
-            <span>Peptide mapping</span>
-            <span>Database thinking</span>
-            <span>Reproducible workflows</span>
-            <span>Molecular interpretation</span>
-          </div>
         </div>
       </div>
     </section>
