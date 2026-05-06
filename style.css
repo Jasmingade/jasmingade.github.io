@@ -224,6 +224,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+  order: 1;
 }
 
 .about-grid p {
@@ -233,13 +234,14 @@ footer {
 
 .about-profile {
   display: grid;
-  grid-template-columns: 240px 1fr;
+  grid-template-columns: 1fr 240px;
   gap: 2rem;
   align-items: center;
   margin-top: 1.5rem;
 }
 
 .about-image {
+  order: 2;
   border-radius: 1.6rem;
   overflow: hidden;
   background: var(--warm-white);
@@ -260,10 +262,12 @@ footer {
   }
 
   .about-image {
+    order: 1;
     max-width: 260px;
   }
 
   .about-grid {
+    order: 2;
     grid-template-columns: 1fr;
   }
 }
