@@ -689,3 +689,11 @@ footer {
     min-height: auto;
   }
 }
+
+.courses-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-end;
+  margin-bottom: 1.4rem;
+}
