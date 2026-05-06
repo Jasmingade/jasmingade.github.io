@@ -3,7 +3,7 @@ const pdfProjects = {
     title: "Master thesis",
     kicker: "MSc thesis · Multi-omics · Survival analysis",
     description:
-      "My master thesis investigates how isoform-level expression, mutation-level features, transcriptomics, proteomics, and clinical metadata contribute to cancer survival. The project combines harmonised biological and clinical data, reproducible computational workflows, and Cox proportional hazards modelling to explore patient-level outcomes across molecular data layers. Beyond identifying survival-associated features, the project contributes a structured framework for understanding whether signals are shared across omics layers, specific to individual representations, or shaped by isoform- and mutation-level biology.",
+      "My master thesis investigates how isoform-level expression, mutation-level features, transcriptomics, proteomics, and clinical metadata contribute to cancer survival. The project involved aligning molecular data with clinical metadata, building reproducible computational workflows, and applying Cox proportional hazards modelling to explore patient-level outcomes across molecular data layers. Beyond identifying survival-associated features, the project contributes a structured framework for understanding whether signals are shared across omics layers, specific to individual representations, or shaped by isoform- and mutation-level biology.",
     tags: [
       "Multi-omics",
       "Survival analysis",
@@ -68,6 +68,8 @@ pdfTabs.forEach((tab) => {
     const pdfPath = tab.dataset.pdf;
     const project = pdfProjects[pdfPath];
 
+    if (!project) return;
+
     pdfTabs.forEach((item) => item.classList.remove("active"));
     tab.classList.add("active");
 
@@ -80,6 +82,7 @@ pdfTabs.forEach((tab) => {
     pdfOpenLink.href = pdfPath;
 
     pdfTags.innerHTML = "";
+
     project.tags.forEach((tag) => {
       const span = document.createElement("span");
       span.textContent = tag;
