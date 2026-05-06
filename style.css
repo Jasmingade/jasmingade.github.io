@@ -503,3 +503,125 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+
+.courses-section {
+  margin-top: 3rem;
+}
+
+.courses-section h3 {
+  font-size: 1.7rem;
+  margin-bottom: 0.4rem;
+}
+
+.course-group {
+  margin-top: 1.2rem;
+  background: var(--warm-white);
+  border: 1px solid var(--border);
+  border-radius: 1.4rem;
+  box-shadow: 0 20px 40px rgba(36, 49, 58, 0.08);
+  overflow: hidden;
+}
+
+.course-group summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  padding: 1.2rem 1.4rem;
+  cursor: pointer;
+  color: var(--text);
+  font-weight: 900;
+  list-style: none;
+}
+
+.course-group summary::-webkit-details-marker {
+  display: none;
+}
+
+.course-group summary::after {
+  content: "＋";
+  color: var(--orange);
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.course-group[open] summary::after {
+  content: "−";
+}
+
+.course-count {
+  margin-left: auto;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  background: rgba(137, 168, 178, 0.18);
+  color: var(--dove-blue-dark);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 0.8rem;
+  padding: 0 1.4rem 1.4rem;
+}
+
+.course-card {
+  display: grid;
+  gap: 0.35rem;
+  padding: 1rem;
+  background: rgba(248, 243, 234, 0.65);
+  border: 1px solid rgba(36, 49, 58, 0.1);
+  border-radius: 1rem;
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(232, 137, 74, 0.45);
+  background: rgba(255, 249, 239, 0.95);
+}
+
+.course-card.no-link {
+  cursor: default;
+}
+
+.course-card.no-link:hover {
+  transform: none;
+  border-color: rgba(36, 49, 58, 0.1);
+}
+
+.course-code {
+  color: var(--orange);
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.course-title {
+  color: var(--text);
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.course-ects {
+  color: var(--muted-text);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 650px) {
+  .course-group summary {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .course-count {
+    margin-left: 0;
+  }
+
+  .course-grid {
+    grid-template-columns: 1fr;
+  }
+}
