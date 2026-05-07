@@ -340,7 +340,7 @@ footer {
 
 .about-profile {
   display: grid;
-  grid-template-columns: 1fr 240px;
+  grid-template-columns: 1fr 190;
   gap: 2.4rem;
   align-items: start;
   margin-top: 1.8rem;
@@ -396,7 +396,7 @@ footer {
 
   .about-image {
     order: 1;
-    max-width: 260px;
+    max-width: 190;
   }
 
   .about-story {
